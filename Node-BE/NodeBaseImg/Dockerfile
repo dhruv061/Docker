@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 # Copy package files and install only production dependencies
 COPY package*.json ./
 
-#--omit=dev Means Don't install devDependencies — only install dependencies
+#--omit=dev Means Don't install devDependencies — only install dependencies.
 RUN npm install --omit=dev
 
 # Copy the rest of the application code
